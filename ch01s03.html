@@ -1,0 +1,150 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Preparar el medio de instalación</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="Guía de Instalación de Edubuntu 24.04"><link rel="up" href="ch01.html" title="Chapter 1. Instalación de Edubuntu 24.04"><link rel="prev" href="ch01s02.html" title="Requisitos del sistema"><link rel="next" href="ch01s04.html" title="Arrancar desde USB"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Preparar el medio de instalación</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch01s02.html">Prev</a> </td><th width="60%" align="center">Chapter 1. Instalación de Edubuntu 24.04</th><td width="20%" align="right"> <a accesskey="n" href="ch01s04.html">Next</a></td></tr></table><hr></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="usb"></a>Preparar el medio de instalación</h2></div></div></div>
+
+  
+
+  <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="id1341"></a>Descargar la imagen ISO</h3></div></div></div>
+    
+    <p>
+      Descargue la imagen oficial de Edubuntu 24.04 desde el sitio web oficial.
+    </p>
+  </div>
+
+  <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="id1342"></a>Verificar integridad</h3></div></div></div>
+    
+    <p>Compruebe que la descarga no esté corrupta:</p>
+
+    <pre class="programlisting">
+sha256sum edubuntu-24.04.iso
+    </pre>
+  </div>
+
+  
+  <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="id1343"></a>Crear USB con Ventoy (Linux / Windows)</h3></div></div></div>
+    
+
+    <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+        <p>Descargue Ventoy desde su sitio oficial.</p>
+      </li><li class="listitem">
+        <p>Ejecute Ventoy y seleccione su memoria USB.</p>
+      </li><li class="listitem">
+        <p>Instale Ventoy en el dispositivo (esto borrará el contenido).</p>
+      </li><li class="listitem">
+        <p>Copie el archivo ISO de Edubuntu directamente al USB.</p>
+      </li><li class="listitem">
+        <p>Reinicie el equipo y arranque desde el USB.</p>
+      </li></ol></div>
+
+    <p>
+      Ventoy permite almacenar múltiples sistemas en el mismo USB sin necesidad de formatearlo nuevamente.
+    </p>
+  </div>
+
+  
+  <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="id1344"></a>Crear USB con Rufus (Windows)</h3></div></div></div>
+    
+
+    <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">
+        <p>Descargue y ejecute Rufus.</p>
+      </li><li class="listitem">
+        <p>Seleccione su memoria USB.</p>
+      </li><li class="listitem">
+        <p>En "Selección de arranque", elija la ISO de Edubuntu.</p>
+      </li><li class="listitem">
+        <p>Seleccione:</p>
+        <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Esquema de partición: GPT</p></li><li class="listitem"><p>Sistema de destino: UEFI</p></li></ul></div>
+      </li><li class="listitem">
+        <p>Haga clic en "Empezar" y espere a que finalice.</p>
+      </li></ol></div>
+
+    <p>
+      Rufus es recomendado para usuarios de Windows que necesitan una herramienta sencilla y rápida.
+    </p>
+  </div>
+<div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="software-edubuntu"></a>Software incluido en Edubuntu 24.04</h3></div></div></div>
+  
+
+  <p>
+    Edubuntu incluye una amplia variedad de aplicaciones educativas y herramientas de productividad.
+    El conjunto exacto puede variar según el perfil seleccionado durante la instalación.
+  </p>
+
+  
+  <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="id1345"></a>Suite educativa principal</h4></div></div></div>
+    
+
+    <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><span class="bold"><strong>GCompris</strong></span> &#8212; Actividades educativas para niños</p></li></ul></div>
+  </div>
+
+  
+  <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="id1351"></a>Aplicaciones educativas (KDE EDU)</h4></div></div></div>
+    
+
+    <div class="section"><div class="titlepage"><div><div><h5 class="title"><a name="id1346"></a>Matemáticas</h5></div></div></div>
+      
+      <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Kalzium &#8212; Tabla periódica</p></li><li class="listitem"><p>KAlgebra &#8212; Calculadora avanzada</p></li><li class="listitem"><p>KBruch &#8212; Fracciones</p></li><li class="listitem"><p>KmPlot &#8212; Gráficas matemáticas</p></li><li class="listitem"><p>Cantor &#8212; Entorno matemático</p></li><li class="listitem"><p>Step &#8212; Simulación física</p></li></ul></div>
+    </div>
+
+    <div class="section"><div class="titlepage"><div><div><h5 class="title"><a name="id1347"></a>Geografía y ciencias</h5></div></div></div>
+      
+      <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>KGeography &#8212; Geografía</p></li><li class="listitem"><p>Marble &#8212; Globo virtual</p></li><li class="listitem"><p>Stellarium &#8212; Astronomía</p></li></ul></div>
+    </div>
+
+    <div class="section"><div class="titlepage"><div><div><h5 class="title"><a name="id1348"></a>Idiomas y mecanografía</h5></div></div></div>
+      
+      <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>KTouch &#8212; Mecanografía</p></li><li class="listitem"><p>Klavaro &#8212; Mecanografía</p></li><li class="listitem"><p>KWordQuiz &#8212; Tarjetas educativas</p></li></ul></div>
+    </div>
+
+    <div class="section"><div class="titlepage"><div><div><h5 class="title"><a name="id1349"></a>Programación</h5></div></div></div>
+      
+      <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>KTurtle &#8212; Programación básica</p></li><li class="listitem"><p>Laby &#8212; Programación mediante juegos</p></li></ul></div>
+    </div>
+
+    <div class="section"><div class="titlepage"><div><div><h5 class="title"><a name="id1350"></a>Geometría</h5></div></div></div>
+      
+      <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Kig &#8212; Geometría interactiva</p></li><li class="listitem"><p>Rocs &#8212; Teoría de grafos</p></li></ul></div>
+    </div>
+
+  </div>
+
+  
+  <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="id1352"></a>Diseño y creatividad</h4></div></div></div>
+    
+
+    <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Inkscape &#8212; Gráficos vectoriales</p></li><li class="listitem"><p>Scribus &#8212; Publicaciones</p></li><li class="listitem"><p>Tux Paint &#8212; Dibujo infantil</p></li><li class="listitem"><p>Drawing &#8212; Editor de imágenes</p></li><li class="listitem"><p>LibreCAD &#8212; CAD 2D</p></li><li class="listitem"><p>Dia &#8212; Diagramas</p></li><li class="listitem"><p>Fritzing &#8212; Electrónica</p></li></ul></div>
+  </div>
+
+  
+  <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="id1353"></a>Oficina y productividad</h4></div></div></div>
+    
+
+    <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>LibreOffice &#8212; Suite ofimática</p></li><li class="listitem"><p>Calibre &#8212; Gestión de ebooks</p></li><li class="listitem"><p>PDF Mod &#8212; Edición PDF</p></li><li class="listitem"><p>Geary &#8212; Correo electrónico</p></li></ul></div>
+  </div>
+
+  
+  <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="id1354"></a>Navegación y colaboración</h4></div></div></div>
+    
+
+    <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Firefox &#8212; Navegador web</p></li><li class="listitem"><p>Gobby &#8212; Edición colaborativa</p></li></ul></div>
+  </div>
+
+  
+  <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="id1355"></a>Herramientas especializadas</h4></div></div></div>
+    
+
+    <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Gramps &#8212; Genealogía</p></li><li class="listitem"><p>Light Speed &#8212; Física relativista</p></li></ul></div>
+  </div>
+
+  
+  <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="id1356"></a>Juegos educativos</h4></div></div></div>
+    
+
+    <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Tux Typing &#8212; Mecanografía</p></li><li class="listitem"><p>Tux Math &#8212; Matemáticas</p></li><li class="listitem"><p>KHangMan &#8212; Ahorcado</p></li><li class="listitem"><p>Blinken &#8212; Memoria</p></li><li class="listitem"><p>GBrainy &#8212; Lógica</p></li><li class="listitem"><p>Atomix &#8212; Rompecabezas</p></li><li class="listitem"><p>Kanagram &#8212; Anagramas</p></li></ul></div>
+  </div>
+
+</div>
+
+
+
+
+
+</div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch01s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch01s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Requisitos del sistema </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Arrancar desde USB</td></tr></table></div></body></html>
