@@ -1,0 +1,16 @@
+body {
+  font-family: "Ubuntu", Arial, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #E95420;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
